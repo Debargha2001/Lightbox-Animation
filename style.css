@@ -1,0 +1,68 @@
+body{
+    font-family: sans-serif;
+}
+#lightbox-link{
+    height:1rem;
+    width: 4rem;
+    margin: auto;
+    padding: 7px 14px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #43b381;
+}
+#lightbox-link:hover{
+    background-color:  #297050;
+
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:active{
+    color: transparent;
+}
+#lightbox{
+    height: 0;
+    width: 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s ease-in-out;
+}
+#content-box{
+    overflow: hidden;
+    width: 50%;
+    height: 50%;
+    background-color: #fffce4;
+
+}
+#content{
+    height:80%;
+    width:80%;
+    background-image: radial-gradient(#eee590, #ddca22, #ff471a, #ff0000, #cc2900, #b32d00, #660000);
+    margin: auto;
+    border-radius: 50%;
+}
+#cross-window{
+    background-color: #b92d35;
+    height: 10%;
+    width: 5%;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    position: relative;
+    left: 730px;
+    font-size: 2rem;
+    text-align: center;
+}
+#cross-window a{
+    color: fffce4;
+}
+#lightbox:target{
+  	height: 100%;
+	width: 100%;
+}
